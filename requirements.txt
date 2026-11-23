@@ -1,0 +1,10 @@
+# Core dependencies for mytest.py
+openai>=1.45.0
+httpx
+python-dotenv
+aia-auth-client==0.0.8
+certifi
+requests
+
+# Dell AIA auth client requires specific repository
+# Install with: pip install aia-auth-client==0.0.8 --trusted-host artifacts.dell.com --extra-index https://artifacts.dell.com/artifactory/api/pypi/agtsdk-1007569-pypi-prd-local/simple
