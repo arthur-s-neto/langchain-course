@@ -10,6 +10,7 @@ load_dotenv()
 def main():
     
     print("Hello from langchain-course!")
+    os.environ["DELL_API_KEY"] = "your-api-key-here"
 
     information = """
     Elon Reeve Musk FRS (/ˈiːlɒn/ EE-lon; born June 28, 1971) is a businessman, known for his leadership of Tesla, SpaceX, X (formerly Twitter), and the Department of Government Efficiency (DOGE). Musk has been the wealthiest person in the world since 2021; as of May 2025, Forbes estimates his net worth to be US$424.7 billion.
@@ -31,7 +32,8 @@ Musk's political activities, views, and statements have made him a polarizing fi
     # llm = ChatOllama(temperature=0, model="gemma3:270m")
     # llm = ChatOpenAI(temperature=0, model="gpt-5")
     # Initialize ChatDellAI with custom temperature and model
-    llm = ChatDellAI(temperature=0.7, model="gemma-4-e4b-it")
+    #llm = ChatDellAI(temperature=0.7, model="gemma-4-e4b-it")
+    llm = ChatDellAI(temperature=0, model="gpt-oss-120b")
     
     # Or use defaults from .env file:
     # llm = ChatDellAI()
