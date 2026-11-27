@@ -5,11 +5,20 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "aia-auth-client>=0.0.11",
     "black>=26.10.1",
     "isort>=9.0.2",
     "langchain>=1.5.2",
     "langchain-openai>=1.8.3",
+    "langchain-pinecone>=0.2.0",
     "langchain-tavily>=0.2.18",
+    "langchain-text-splitters>=1.2.0",
+    "langchain-unstructured>=1.0.1",
+    "pinecone>=6.0.0,<8.0.0",
     "python-dotenv>=1.2.4",
     "tavily-python>=0.8.5",
+    "unstructured>=0.27.38",
 ]
+
+[[tool.uv.index]]
+url = "https://artifacts.dell.com/artifactory/api/pypi/agtsdk-1007569-pypi-prd-local/simple"
